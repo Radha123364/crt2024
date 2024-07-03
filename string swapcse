@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str1=s.nextLine();
+        String swappedCase="";
+        for(char c:str1.toCharArray()){
+            if(Character.isUpperCase(c)){
+                swappedCase+=Character.toLowerCase(c);
+            }
+            else{
+                swappedCase+=Character.toUpperCase(c);
+            }
+        }
+        System.out.println(swappedCase);
+        
+       
+    }
+}
